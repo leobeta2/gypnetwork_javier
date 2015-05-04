@@ -47,10 +47,25 @@
 
     <script type="text/javascript">
 	$(document).ready(function(){
-		$("#map").goMap({
-			address : 'valdivia,chile',
-			zoom: 14
-		});
+
+    $("#map").goMap({ 
+      zoom: 18,
+      markers: [{  
+        latitude: -39.85027, 
+        longitude:  -73.22247, 
+        html: { 
+                content: 'GyPNetwork Ltda.', 
+                popup: true 
+            } ,
+ 
+        title: 'GyPNetwork Ltda.' 
+      }] 
+    }); 
+ 
+    $.goMap.createMarker({  
+      address: 'Vilnius, Lithuania' ,
+      zoom:18
+    });  
 	});
 	</script>
 	<style type="text/css">
@@ -136,41 +151,25 @@
               Direccion
             </h4>
             <address>
-              Revox
-              Crossraid, 85/B Cross Street,
+              Villa San Pedro, pasaje 5 #712,
               <br>
-              New York, USA
-              <br>
-              NA1 42SL
+              Valdivia, Chile
             </address>
           </section>
           <section class="contact-infos">
-            <h4 class="title custom-font text-black">
-              Horario de atencion
-            </h4>
-            <p>
-              Monday - Friday 8am to 4pm
-              <br>
-              Saturday - 7am to 6pm
-              <br>
-              Sunday- Closed
-              <br>
-            </p>
-          </section>
-          <section class="contact-infos">
             <h4>
-              telefonos
+              Telefonos
             </h4>
             <p>
               <i class="icon-phone">
               </i>
-              +088-01234567890
+              +56 9 99883623  Javier Pérez Ferrada
             </p>
 
             <p>
               <i class="icon-phone">
               </i>
-              +088-01234567890
+              +56 9 92653875  Francisco Gonzalez Ojeda
             </p>
 
           </section>
@@ -181,92 +180,7 @@
       </div>
     </div>
 
-    <div class="container">
-      <div class="row">
-        <div class='col-md-offset-2 col-md-8 text-center'>
-          <h2>
-            Responsive Quote Carousel BS3
-          </h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-offset-2 col-md-8 mar-b-30">
-          <div class="carousel slide" data-ride="carousel" id="quote-carousel">
-            <!-- Bottom Carousel Indicators -->
-            <ol class="carousel-indicators">
-              <li data-target="#quote-carousel" data-slide-to="0" class="active">
-              </li>
-              <li data-target="#quote-carousel" data-slide-to="1">
-              </li>
-              <li data-target="#quote-carousel" data-slide-to="2">
-              </li>
-            </ol>
-
-            <!-- Carousel Slides / Quotes -->
-            <div class="carousel-inner">
-
-              <!-- Quote 1 -->
-              <div class="item active">
-                <blockquote>
-                  <div class="row">
-                    <div class="col-sm-3 text-center">
-                      <img class="img-circle" src="img/person_1.png" style="width: 100px;height:100px;" alt="">
-                    </div>
-                    <div class="col-sm-9">
-                      <p>
-                        Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit!
-                      </p>
-                      <small>
-                        Someone famous
-                      </small>
-                    </div>
-                  </div>
-                </blockquote>
-              </div>
-              <!-- Quote 2 -->
-              <div class="item">
-                <blockquote>
-                  <div class="row">
-                    <div class="col-sm-3 text-center">
-                      <img class="img-circle" src="img/person_2.png" style="width: 100px;height:100px;" alt="">
-                    </div>
-                    <div class="col-sm-9">
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam auctor nec lacus ut tempor. Mauris.
-                      </p>
-                      <small>
-                        Someone famous
-                      </small>
-                    </div>
-                  </div>
-                </blockquote>
-              </div>
-              <!-- Quote 3 -->
-              <div class="item">
-                <blockquote>
-                  <div class="row">
-                    <div class="col-sm-3 text-center">
-                      <img class="img-circle" src="img/person_3.png" style="width: 100px;height:100px;" alt="">
-                    </div>
-                    <div class="col-sm-9">
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam auctor nec lacus ut tempor. Mauris.
-                      </p>
-                      <small>
-                        Someone famous
-                      </small>
-                    </div>
-                  </div>
-                </blockquote>
-              </div>
-            </div>
-
-
-          </div>
-
-        </div>
-      </div>
-    </div>
+    
     </body>
 
 
